@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./src/server.js",
-    "build": "./node_modules/.bin/tsc -p ./tsconfig.json",
-    "nsp": "./node_modules/.bin/nsp check"
+    "start": "ts-node server.ts",
+    "watch": "nodemon --watch 'service/**/*.ts' --exec 'ts-node' server.ts",
+    "nsp": "nsp check"
   },
   "engines": {
     "node": "4.7.0"
@@ -21,7 +21,9 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.52",
+    "nodemon": "^1.11.0",
     "nsp": "^2.6.2",
+    "ts-node": "^1.7.2",
     "typescript": "^2.1.4"
   }
 }

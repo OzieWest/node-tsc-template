@@ -1,10 +1,11 @@
-const path = require('path');
-const util = require('util');
-const express = require('express');
-const helmet = require('helmet');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const log4js = require('log4js');
+import * as path from 'path';
+import * as util from 'util';
+import * as express from 'express';
+import * as helmet from 'helmet';
+import * as cookieParser from 'cookie-parser';
+import * as bodyParser from 'body-parser';
+import * as log4js from 'log4js/lib/log4js';
+
 const logger = log4js.getLogger('app');
 
 const app = express();
@@ -18,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 import config from './config';
 import route from './routes/index';
 
-app.use('/api', route);
+app.use('/', route);
 
 app.listen(config.port, () => {
     logger.info(`Init configuration: ${util.inspect(config)}`);
