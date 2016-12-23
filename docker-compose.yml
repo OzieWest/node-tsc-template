@@ -1,0 +1,7 @@
+main:
+  build: ./app
+  dockerfile: "Dockerfile.dev"
+  volumes:
+      - "./app:/usr/src/app"
+  expose:
+    - "3000"

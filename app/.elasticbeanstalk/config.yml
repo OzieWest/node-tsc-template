@@ -1,0 +1,14 @@
+branch-defaults:
+  master:
+    environment: production
+  dev:
+    environment: development
+deploy:
+  artifact: "release.zip"
+global:
+  application_name: app-name
+  default_ec2_keyname: app-name
+  default_platform: Node.js
+  default_region: us-west-2
+  profile: app-deploy-profile
+  sc: git
