@@ -370,4 +370,5 @@ jspm_packages
 *.zip
 
 ts-node
+app/test/*.js
 

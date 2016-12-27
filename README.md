@@ -10,6 +10,8 @@
 - **Docker** | https://www.docker.com
 - **docker-compose** | https://docs.docker.com/compose
 - **Elastic Beanstalk** as a host | https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
+- **MochaJs** as test runner | https://mochajs.org
+- **SinonJs** as test framework | http://sinonjs.org
 
 ### Start
 
@@ -17,6 +19,13 @@
 cd app
 npm i
 npm start #or npm run watch
+```
+
+### Tests
+
+```shell
+cd app
+npm test
 ```
 
 ### Docker
@@ -44,5 +53,5 @@ docker-compose up --build
 
 ```shell
 cd app
-./deploy.sh
+npm run deploy
 ```
