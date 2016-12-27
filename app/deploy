@@ -12,6 +12,7 @@ for region in "us-west-2"; do
 
     # copy common files
     cp -R server release
+    cp -R client release
     cp package.json release
     cp tsconfig.json release
 
