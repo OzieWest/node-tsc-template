@@ -1,7 +1,19 @@
-main:
+appsvr:
   build: ./app
   dockerfile: "Dockerfile.dev"
   volumes:
       - "./app:/usr/src/app"
   ports:
-    - "3000:3000"
+    - "3000"
+
+nginx:
+  restart: always
+  build: ./nginx
+  ports:
+    - "8080:8080"
+  volumes:
+    - /www/public
+  volumes_from:
+    - appsvr
+  links:
+    - appsvr:appsvr

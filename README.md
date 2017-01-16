@@ -1,12 +1,12 @@
-## Node-tsc-template
+## Node Typescript Template
 
 ### Tech Stack Included
 
 - **Typescript** instead of JavaScript | https://www.typescriptlang.org
 - **ts-node** as a runner | https://github.com/TypeStrong/ts-node
-- **Strongloop** as web framework https://strongloop.com
+- **express** as web framework https://expressjs.com
 - **log4js** as logger | https://github.com/nomiddlename/log4js-node
-- **Optimist** as a config manager | https://github.com/substack/node-optimist
+- **optimist** as a config manager | https://github.com/substack/node-optimist
 - **Docker** | https://www.docker.com
 - **docker-compose** | https://docs.docker.com/compose
 - **Elastic Beanstalk** as a host | https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
