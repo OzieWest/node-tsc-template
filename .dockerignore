@@ -1,0 +1,19 @@
+### Common Configuration
+.dockerignore
+.editorconfig
+.git/
+.github/
+.github_changelog_generator
+.gitignore
+.idea/
+.vscode/
+Dockerfile
+config/**/*.json
+config/**/runtime.*
+coverage/
+node_modules/
+nodemon.json
+*.md
+jest/
+build/
+dist/
